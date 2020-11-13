@@ -1,6 +1,4 @@
-const title = document.getElementById("title");
-
-title.innerHTML = "Hi JONE";
-title.style.color = "black";
-
+const title = document.querySelector("#title");
+title.innerHTML = "Welcome JONE";
+title.style.color = "pink";
 document.title = "Started from bottom";
