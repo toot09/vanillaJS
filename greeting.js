@@ -6,10 +6,17 @@ const form = document.querySelector(".js-form"),
 const User_LS = "cuurentUser",
   SHOWING_ON = "showing";
 
+//localStorage.clear();
+
+function saveName(name){
+  localStorage.setItem("name",name);
+  loadName();
+}
+
 function handleSubmit(event) {
   //Default is Refresh. so prevent Default event
   event.preventDefault();
-  
+  saveName(input.value);
 }
 
 function askForName() {
